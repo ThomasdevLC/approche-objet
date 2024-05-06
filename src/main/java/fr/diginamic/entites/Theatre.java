@@ -23,15 +23,10 @@ public class Theatre {
 	    }
 	}
 
-	public String getNom() {
-		return nom;
-	}
-
-	public int getTotalClients() {
-		return totalClients;
-	}
-
-	public double getRecette() {
-		return recette;
-	}
+	@Override
+	public String toString() {
+		return "Theatre nom = " + nom + ", capacite = " + capacite + ", totalClients = " + totalClients + ", recette = "
+				+ recette + " euros";
+		
+	}	
 }

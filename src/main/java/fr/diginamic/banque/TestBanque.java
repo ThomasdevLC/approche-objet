@@ -11,7 +11,6 @@ public class TestBanque {
 		
 		Compte[] array = new Compte[2];
 		 
-		 
 		 array[0] = compte1;
 		 array[1] = compte2;
 		 
@@ -19,13 +18,7 @@ public class TestBanque {
 			    System.out.println(array[i]);
 			} 
 
-		
 		System.out.println(compte1.getNumeroCompte());
 		System.out.println(compte2.getTaux() );
-     
-        
-        
-
 	}
-
 }

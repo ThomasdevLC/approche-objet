@@ -8,9 +8,9 @@ public class Credit extends Operation {
 		
 	}
 
-public double calculTotal(double total) {
+	public double calculTotal(double total) {
 	return total+getMontant();
-}	
+	}	
 	
 	  @Override
 	    public String getType() {
@@ -21,5 +21,4 @@ public double calculTotal(double total) {
 	public String toString() {
 		return "Credit [getType()=" + getType() + "]";
 	}
-	
 }
