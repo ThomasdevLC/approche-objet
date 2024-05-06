@@ -3,9 +3,8 @@ package utils;
 public class TestMethodeStatic {
 
 	public static void main(String[] args) {
-		String chaine = "12"; // Exemple de chaîne contenant un nombre entier
-        System.out.println(chaine);	
-
+		String chaine = "12"; 
+		
         // Conversion de la chaîne en entier
         int entier = Integer.parseInt(chaine);
         System.out.println(entier);	
