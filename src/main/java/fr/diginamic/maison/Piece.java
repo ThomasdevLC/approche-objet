@@ -34,10 +34,7 @@ public abstract class Piece {
 
 	@Override
 	public String toString() {
-		return "Piece : "  + getType() + " étage = "+ etage + ", superficie = " + superficie   ;
+		return "Piece : "  + getType() + " étage = "+ etage + ", superficie = " + superficie;
 	}
-
-	
-	
 
 }
