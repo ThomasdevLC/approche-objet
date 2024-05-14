@@ -7,6 +7,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class LectureFichier {
@@ -35,7 +36,7 @@ public class LectureFichier {
                 Ville ville = new Ville(nom, departement, region, population);
                 listeVilles.add(ville);
                 
-                System.out.println(ville);
+                //System.out.println(ville);
             }
         };
     
@@ -44,10 +45,31 @@ public class LectureFichier {
         
         for (Ville ville : listeVilles) {
             villeStrings.add(ville.toString());
-        }
+            ville.toString();
+        };
         
         String newPath = "D:/diginamic/06_java/java-poo/TP/final_recensement.csv";
         Path pathDest = Paths.get(newPath);
         Files.write(pathDest, villeStrings, StandardCharsets.UTF_8, StandardOpenOption.CREATE, StandardOpenOption.WRITE);
+        
+//        Collections.sort(listeVilles);
+//        
+//        for (Ville ville : listeVilles) {
+//          System.out.println(ville.toString());  ;
+//        };
+        
+        Collections.sort(listeVilles, new ComparatorHabitant());
+        System.out.println("--- Tri par population totale : --- ");
+        for (Ville ville : listeVilles) {
+            System.out.println(ville.getNom() + " - Population : " + ville.getPopulationTotale());
+        }
+        
+        Collections.sort(listeVilles, new ComparatorNom());
+        System.out.println(" --- Tri par nom- --- :");
+        for (Ville ville : listeVilles) {
+            System.out.println( ville.getNom());
+        }
+        
+    
     }       
 }
