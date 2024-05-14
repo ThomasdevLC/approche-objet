@@ -15,8 +15,22 @@ public class RechercheDixVillesRegions extends MenuService {
     	
         List<Ville> listeVilles = new ArrayList<>();
     	
-        System.out.print("Ecrire un code de région: ");
-       
+    	System.out.println("Hauts-de-France - Code : 32\r\n"
+    			+ "Île-de-France - Code : 11\r\n"
+    			+ "Grand Est - Code : 44\r\n"
+    			+ "Normandie - Code : 28\r\n"
+    			+ "Bretagne - Code : 53\r\n"
+    			+ "Pays de la Loire - Code : 52\r\n"
+    			+ "Centre-Val de Loire - Code : 24\r\n"
+    			+ "Bourgogne-Franche-Comté - Code : 27\r\n"
+    			+ "Nouvelle-Aquitaine - Code : 75\r\n"
+    			+ "Auvergne-Rhône-Alpes - Code : 84\r\n"
+    			+ "Occitanie - Code : 76\r\n"
+    			+ "Provence-Alpes-Côte d'Azur - Code : 93\r\n"
+    			+ "Corse - Code : 94");
+    	System.out.println();
+        System.out.print("Ecrire un code de région: ");    
+        
         String codeRegion = scanner.next();
         String nomRegion = "";
         boolean regionExiste = false;

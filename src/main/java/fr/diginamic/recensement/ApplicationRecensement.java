@@ -8,10 +8,10 @@ public class ApplicationRecensement {
     public static void main(String[] args) throws IOException {
         Recensement recensement = new Recensement();
         Scanner scanner = new Scanner(System.in);
-        afficherMenu();
 
         int choix = 0;
         while (choix != 9) {
+            afficherMenu();
             choix = scanner.nextInt();
             switch (choix) {
                 case 1:
@@ -49,6 +49,7 @@ public class ApplicationRecensement {
     }
 
     public static void afficherMenu() {
+    	System.out.println();
         System.out.println("MENU");
         System.out.println("1. Recherche de population par ville");
         System.out.println("2. Recherche de population par département");
@@ -60,6 +61,9 @@ public class ApplicationRecensement {
         System.out.println("8. Les 10 villes les plus peuplées de France");
         System.out.println("9. Sortir du programme");
         System.out.print("Choisissez une option (1-9) : ");
+    	System.out.println();
+    	System.out.println();
+
     }
 }
 
