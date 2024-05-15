@@ -8,9 +8,8 @@ public class RecherchePopulationVille extends MenuService {
 
     @Override
     public void traiter(Recensement recensement, Scanner scanner) throws IOException {
-    	recensement.lireFichier();
-    	ArrayList<Ville> villes = recensement.getVille();
-    	
+        ArrayList<Ville> villes = new ArrayList<>(recensement.lireFichier()); 
+
         System.out.print("Ecrire un nom de commune: ");
        
         String nomCommune = scanner.next();

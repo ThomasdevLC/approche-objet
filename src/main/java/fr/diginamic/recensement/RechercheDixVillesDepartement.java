@@ -11,12 +11,10 @@ public class RechercheDixVillesDepartement extends MenuService {
 	
 	@Override
     public void traiter(Recensement recensement, Scanner scanner) throws IOException {
-    	recensement.lireFichier();
-    	ArrayList<Ville> villes = recensement.getVille();
-    	
+        ArrayList<Ville> villes = new ArrayList<>(recensement.lireFichier()); 
+
         List<Ville> listeVilles = new ArrayList<>();
 
-    	
         System.out.print("Ecrire un code de département: ");
        
         String codeDep = scanner.next();

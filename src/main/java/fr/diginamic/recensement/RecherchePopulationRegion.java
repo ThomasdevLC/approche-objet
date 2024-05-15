@@ -8,9 +8,8 @@ public class RecherchePopulationRegion extends MenuService{
 
 	@Override
     public void traiter(Recensement recensement, Scanner scanner) throws IOException {
-    	recensement.lireFichier();
-    	ArrayList<Ville> villes = recensement.getVille();
-    	
+        ArrayList<Ville> villes = new ArrayList<>(recensement.lireFichier()); 
+
     	System.out.println("Hauts-de-France - Code : 32\r\n"
     			+ "Île-de-France - Code : 11\r\n"
     			+ "Grand Est - Code : 44\r\n"

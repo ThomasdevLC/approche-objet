@@ -9,9 +9,8 @@ public class RechercheDixVillesFrance extends MenuService  {
 
 	@Override
     public void traiter(Recensement recensement, Scanner scanner) throws IOException {
-    	recensement.lireFichier();
-    	ArrayList<Ville> villes = recensement.getVille();
-    	
+        ArrayList<Ville> villes = new ArrayList<>(recensement.lireFichier()); 
+
         Collections.sort(villes, new ComparatorVilles());
         System.out.println("10 Villes les plus peuplées de France :" );
 

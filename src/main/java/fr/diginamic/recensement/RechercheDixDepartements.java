@@ -9,8 +9,7 @@ import java.util.Scanner;
 public class RechercheDixDepartements extends MenuService  {
 	
     public void traiter(Recensement recensement, Scanner scanner) throws IOException {
-        recensement.lireFichier();
-        ArrayList<Ville> villes = recensement.getVille();
+        ArrayList<Ville> villes = new ArrayList<>(recensement.lireFichier()); 
 
         HashMap<String, Departement> mapDepartements = new HashMap<>();
 
