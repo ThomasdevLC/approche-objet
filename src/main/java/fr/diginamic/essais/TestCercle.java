@@ -7,5 +7,6 @@ public class TestCercle {
 
 		Cercle cercle = new Cercle (18.50);		
 		System.out.println(cercle);
+		
 	}
 }

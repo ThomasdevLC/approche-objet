@@ -14,9 +14,13 @@ public class TestBanque {
 		 array[0] = compte1;
 		 array[1] = compte2;
 		 
-		 for (int i = 0; i < array.length; i++) {
-			    System.out.println(array[i]);
-			} 
+//		 for (int i = 0; i < array.length; i++) {
+//			    System.out.println(array[i]);
+//			};
+//		 
+		 for ( Compte compte : array) {
+			    System.out.println(compte);
+		 }
 
 		System.out.println(compte1.getNumeroCompte());
 		System.out.println(compte2.getTaux() );

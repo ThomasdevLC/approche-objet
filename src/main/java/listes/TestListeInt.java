@@ -13,7 +13,7 @@ public class TestListeInt {
 	    
 	    System.out.println("éléments : " );
 	    for (int num : liste ) {
-	    	System.out.println(+ num);
+	    	System.out.println(num);
 	    }
 
 	   System.out.println("taille liste : " + liste.size()); 

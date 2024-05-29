@@ -4,7 +4,6 @@ public class Debit extends Operation {
 
 	public Debit(String date, int montant) {
 		super(date, montant);
-		// TODO Auto-generated constructor stub
 	}
 	
 	

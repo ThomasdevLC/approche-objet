@@ -17,7 +17,6 @@ public class RecherchePopulationVille extends MenuService {
         
     	for (Ville ville : villes) {
             if(ville.getNomCommune().equalsIgnoreCase(nomCommune)) {
-            	ville.getPopulationTotale();
             	villeExiste = true;
             	System.out.println("population de la ville " + nomCommune + ": "  + ville.getPopulationTotale());
             }

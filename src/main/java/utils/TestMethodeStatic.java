@@ -20,5 +20,4 @@ public class TestMethodeStatic {
         System.out.println("Le nombre maximum entre " + a + " et " + b + " est : " + max);
 
 	}
-
 }

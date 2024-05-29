@@ -10,6 +10,7 @@ public class TestSetDouble {
         HashSet<Double> numbers = new HashSet<>();
         
         numbers.add(1.5);
+        numbers.add(1.5);
         numbers.add(8.25);
         numbers.add(-7.32);
         numbers.add(13.3);

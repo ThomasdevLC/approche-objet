@@ -10,5 +10,6 @@ public class AffichageForme {
         
         System.out.println("Périmètre : " + perimetre);
         System.out.println("Surface : " + surface);
+        
     }
 }
